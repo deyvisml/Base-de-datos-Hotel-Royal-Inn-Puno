@@ -1,4 +1,4 @@
-CREATE DATABASE Hotel;
+CREATE DATABASE hotel_royal_inn_puno;
 
 USE Hotel;
 
