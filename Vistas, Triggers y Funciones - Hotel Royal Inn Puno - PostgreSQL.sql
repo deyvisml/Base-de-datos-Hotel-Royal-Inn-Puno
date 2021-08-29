@@ -224,7 +224,7 @@ SELECT * FROM cambiarEstadoRetirarVehiculoGaraje('123456');
 
 
 /*3. FUNCTION: Mostrar toda la información de todas la(s) reserva(s) de un cliente en base a su DNI*/
-CREATE OR REPLACE FUNCTION habitacionesLibresXPiso(id_card_cliente CHARACTER VARYING(30))
+CREATE OR REPLACE FUNCTION todasReservacionesCliente(id_card_cliente CHARACTER VARYING(30))
     RETURNS TABLE(
         id_reservacion INTEGER, 
         fecha_reservacion TIMESTAMP, 
@@ -252,7 +252,7 @@ BEGIN
 END;
 $$;
 
-SELECT * FROM habitacionesLibresXPiso('123456');
+SELECT * FROM todasReservacionesCliente('123456');
 
 
 /*4. FUNCTION: Cambiar el estado de una reserva Y por la llegada del cliente X que la reservo*/
